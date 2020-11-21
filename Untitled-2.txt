@@ -1,0 +1,9 @@
+---
+- hosts : all
+  become : yes
+  tasks :
+   -name : copying jinja file to node
+    template :
+      src : /home/devops/Readme.txt.j2
+      dest: /home/devops/
+---
